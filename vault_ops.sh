@@ -14,9 +14,9 @@ if [ ! -d "$vault_dir" ]; then
   exit 1
 fi
 
-# ------------------------------------
+
 # Main menu loop
-# ------------------------------------
+
 while true; do
   echo
   echo "======================="
@@ -55,6 +55,7 @@ while true; do
       fi
       ;;
 
+
     3)
       # Add Log Entry
       read -rp "Enter log message: " log
@@ -79,4 +80,3 @@ while true; do
       ;;
   esac
 done
-
