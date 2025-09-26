@@ -1,5 +1,5 @@
 #!/bin/bash
-vault1="$root/Shell_Scripting_activity/secure_vault"
+vault1="secure_vault"
 
 if [ ! -d "$vault1" ]; then
 mkdir -p "$vault1"
