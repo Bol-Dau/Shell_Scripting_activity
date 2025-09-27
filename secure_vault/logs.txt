@@ -1,1 +1,0 @@
-welcome to logs.txt to store system logs
