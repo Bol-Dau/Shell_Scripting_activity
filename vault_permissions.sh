@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Check if secure_vault exists
-if [ ! -d "$HOME/secure_vault/" ]; then
+if [ ! -d ~/secure_vault/ ]; then
     echo "'secure_vault' does not exist"
     exit 1
 fi
 
-cd $HOME/secure_vault
+cd ~/secure_vault
 
 # Function to update permission
 update_permission() {
