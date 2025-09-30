@@ -49,9 +49,9 @@ while true; do
 
       if grep -q "$old" "$secrets_file"; then
         sed -i "s/$old/$new/g" "$secrets_file"
-        echo "✅ Secret updated."
+        echo " Secret updated."
       else
-        echo "❌ No match found."
+        echo " No match found."
       fi
       ;;
 
@@ -61,22 +61,22 @@ while true; do
       read -rp "Enter log message: " log
       timestamp=$(date +"%Y-%m-%d %H:%M:%S")
       echo "[$timestamp] $log" >> "$logs_file"
-      echo "✅ Log entry added."
+      echo " Log entry added."
       ;;
 
     4)
       # Access Keys (always denied)
-      echo "ACCESS DENIED 🚫"
+      echo "ACCESS DENIED "
       ;;
 
     5)
       # Exit
-      echo "👋 Exiting Vault Operations."
+      echo " Exiting Vault Operations."
       break
       ;;
 
     *)
-      echo "⚠️ Invalid option, please choose 1-5."
+      echo " Invalid option, please choose 1-5."
       ;;
   esac
 done
