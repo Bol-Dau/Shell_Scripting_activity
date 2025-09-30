@@ -1,5 +1,5 @@
 #!/bin/bash
-vault1="/home/secure_vault"
+vault1="$HOME/secure_vault"
 
 if [ ! -d "$vault1" ]; then
 mkdir -p "$vault1"

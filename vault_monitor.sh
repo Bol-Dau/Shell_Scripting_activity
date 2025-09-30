@@ -11,13 +11,13 @@ echo -e "$details\n"
 # Checking if any file permissions go beyond 644
 Security=$(find /home/secure_vault/ -type f -perm /133 2>/dev/null)
 if [ -n "$Security" ]; then
-   echo -e "⚠️ SECURITY RISK DETECTED\n"
+   echo -e "SECURITY RISK DETECTED\n"
    echo "Here are the files at risk"
    echo -e "$Security\n"
 else
    echo "All safe"
 fi
-echo "========================================================="
+echo
 # Print the confirmation message
 echo -e "Report saved to: vault_report.txt on $(date +%d/%m/%Y_%H:%M:%S)\n" >&2
 exit
