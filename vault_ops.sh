@@ -9,7 +9,7 @@ keys_file="$vault_dir/keys.txt"
 # Check vault exists
 
 if [ ! -d "$vault_dir" ]; then
-  echo "❌ Error: vault not found at $vault_dir"
+  echo " Error: vault not found at $vault_dir"
   echo "Run ./vault_setup.sh first."
   exit 1
 fi
