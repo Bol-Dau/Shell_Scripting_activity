@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-vault_dir="/home/secure_vault"
+vault_dir="$HOME/secure_vault"
 secrets_file="$vault_dir/secrets.txt"
 logs_file="$vault_dir/logs.txt"
 keys_file="$vault_dir/keys.txt"
